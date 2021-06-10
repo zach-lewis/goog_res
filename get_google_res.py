@@ -27,7 +27,7 @@ def get_google_results(word):
     session=HTMLSession()
     r=session.get(address, headers=headers)
 
-    #Render address in HTML and get Soup
+    #Render address in HTML and gets Soup
     r.html.render()
     soup = BeautifulSoup(r.html.html, 'lxml')
     
